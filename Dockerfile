@@ -29,7 +29,7 @@ RUN pip install supervisor-stdout
 ADD supervisord.conf /etc/supervisord.conf
 
 # copy the application
-ADD src/ /opt/app
+ADD app/ /opt/app
 
 # start supervisor to run our wsgi server
 CMD supervisord -c /etc/supervisord.conf -n
