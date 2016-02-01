@@ -26,7 +26,7 @@ RUN pip install supervisor-stdout
 
 # file management, everything after an ADD is uncached, so we do it as late as
 # possible in the process.
-ADD ./Docker/supervisord.conf /etc/supervisord.conf
+ADD supervisord.conf /etc/supervisord.conf
 
 # copy the application
 ADD src/ /opt/app
