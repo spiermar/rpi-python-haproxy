@@ -1,6 +1,9 @@
 FROM hypriot/rpi-python:2.7
 MAINTAINER Martin Spier <spiermar@gmail.com>
 
+# get up to date
+RUN apt-get update --fix-missing
+
 # install supervisord
 RUN apt-get install -y supervisor
 
